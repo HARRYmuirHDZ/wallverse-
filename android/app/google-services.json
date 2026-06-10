@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "425502023776",
+    "project_id": "wallverse-4804c",
+    "storage_bucket": "wallverse-4804c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425502023776:android:b63e578a1de24e4079e305",
+        "android_client_info": {
+          "package_name": "com.wallverse.wallverse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLSStBpWvWBUY9KkbpiSQ8l2-DiFPOr4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
