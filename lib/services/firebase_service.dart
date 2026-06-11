@@ -302,9 +302,9 @@ class FirebaseService {
           isFree: true,
         ),
         Wallpaper(
-          id: 'nature_volcan',
+          id: 'nature_fuji',
           subcategoryId: 'nature_all',
-          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2Fvolcan%20lava.png?alt=media&token=bba7623e-fa86-4a41-ac35-03476e66bc86',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FMonte%20Fuji%20.png?alt=media&token=2cf88d00-6e6e-4d13-af95-599717009885',
           resolution: '4K',
           isFree: false,
         ),
@@ -323,9 +323,9 @@ class FirebaseService {
           isFree: false,
         ),
         Wallpaper(
-          id: 'nature_fuji',
+          id: 'nature_volcan',
           subcategoryId: 'nature_all',
-          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FMonte%20Fuji%20.png?alt=media&token=2cf88d00-6e6e-4d13-af95-599717009885',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2Fvolcan%20lava.png?alt=media&token=bba7623e-fa86-4a41-ac35-03476e66bc86',
           resolution: '4K',
           isFree: false,
         ),
