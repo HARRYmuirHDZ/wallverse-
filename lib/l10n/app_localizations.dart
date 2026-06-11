@@ -213,7 +213,7 @@ class AppLocalizations {
       'anime': 'Anime',
       'games': 'Juegos',
       'movies': 'Películas',
-      'nature': 'Paisajes',
+      'nature': 'Paisaje',
       'neon': 'Neón',
       'cars': 'Autos',
       'space': 'Espacio',
