@@ -278,6 +278,103 @@ class FirebaseService {
       return customDbWallpapers.sublist(startIndex, endIndex);
     }
 
+    if (subcategoryId == 'nature_all') {
+      final List<Wallpaper> customNatureWallpapers = [
+        Wallpaper(
+          id: 'nature_playa',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2Fplaya.png?alt=media&token=a70e5f9d-4587-4af4-ad6e-bc66fee5db78',
+          resolution: '4K',
+          isFree: true,
+        ),
+        Wallpaper(
+          id: 'nature_sahara',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FSahara.png?alt=media&token=ecc88935-afc4-47b6-b6ac-8180af3a1428',
+          resolution: '4K',
+          isFree: true,
+        ),
+        Wallpaper(
+          id: 'nature_boreales',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FBoreales%20islandia.png?alt=media&token=dbca9cd3-2748-4d2f-af32-df7d611825cc',
+          resolution: '4K',
+          isFree: true,
+        ),
+        Wallpaper(
+          id: 'nature_volcan',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2Fvolcan%20lava.png?alt=media&token=bba7623e-fa86-4a41-ac35-03476e66bc86',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'nature_penon',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FPe%C3%B1on.png?alt=media&token=4da96ac1-ec0c-4702-99de-55c9611522fd',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'nature_patagonia',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FPatagonia.png?alt=media&token=3e685e5e-d2e9-4f83-81cf-b6c2f260ba53',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'nature_fuji',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FMonte%20Fuji%20.png?alt=media&token=2cf88d00-6e6e-4d13-af95-599717009885',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'nature_iguazu',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FIguazu.png?alt=media&token=f97254b4-60c5-4c11-b7cc-53f38b99e134',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'nature_cañon',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FGran%20ca%C3%B1on.png?alt=media&token=d3035220-0a34-4a8e-b87c-f560fa2c9ced',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'nature_glacial',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FGlacial%20lake.png?alt=media&token=e19cd667-d54e-4672-8a4f-71b66347fc3a',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'nature_alpes',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FGalaxia%20alpes.png?alt=media&token=c576ce9c-2c90-433d-b1bf-3d5640c69af7',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'nature_coliseo',
+          subcategoryId: 'nature_all',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Natural%2FColiseo%20romano.png?alt=media&token=202da4cb-e39c-41a5-86e4-c18f757d3a02',
+          resolution: '4K',
+          isFree: false,
+        ),
+      ];
+
+      int startIndex = 0;
+      if (startAfterId != null) {
+        startIndex = customNatureWallpapers.indexWhere((w) => w.id == startAfterId) + 1;
+        if (startIndex <= 0) startIndex = 0;
+      }
+      final endIndex = (startIndex + limit).clamp(0, customNatureWallpapers.length);
+      return customNatureWallpapers.sublist(startIndex, endIndex);
+    }
+
     return _generateDemoWallpapers(subcategoryId);
   }
 
