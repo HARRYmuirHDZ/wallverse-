@@ -47,18 +47,20 @@ class FirebaseService {
   }) async {
     if (_useFirebase) {
       Query<Map<String, dynamic>> query;
-      if (subcategoryId == 'cars_all') {
+      if (subcategoryId == 'cars_all' || subcategoryId == 'neon_all') {
+        final categoryId = subcategoryId == 'cars_all' ? 'cars' : 'neon';
         final subcategorySnapshot = await FirebaseFirestore.instance
             .collection('subcategories')
-            .where('category_id', isEqualTo: 'cars')
+            .where('category_id', isEqualTo: categoryId)
             .get();
         final subIds = subcategorySnapshot.docs.map((doc) => doc.id).toList();
 
         if (subIds.isEmpty) return [];
+        final queryLimit = subcategoryId == 'neon_all' ? 15 : limit;
         query = FirebaseFirestore.instance
             .collection('wallpapers')
             .where('subcategory_id', whereIn: subIds)
-            .limit(limit);
+            .limit(queryLimit);
       } else {
         query = FirebaseFirestore.instance
             .collection('wallpapers')
@@ -442,10 +444,10 @@ class FirebaseService {
     final resolutions = ['4K', '4K', '4K', '4K', '4K', '4K', '4K', '4K', '4K', '4K', '4K', '4K'];
     final List<Wallpaper> wallpapers = [];
 
-    // Use unique seed per subcategory for varied but consistent images
     final baseSeed = subcategoryId.hashCode.abs();
+    final count = subcategoryId == 'neon_all' ? 15 : 12;
 
-    for (int i = 0; i < 12; i++) {
+    for (int i = 0; i < count; i++) {
       final seed = baseSeed + i;
       String imageUrl = 'https://picsum.photos/seed/$seed/1080/1920';
 

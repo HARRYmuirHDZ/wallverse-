@@ -180,9 +180,22 @@ class _CategoryCardState extends State<CategoryCard>
                       color: Colors.black.withOpacity(_isHovered ? 0.4 : 0.55),
                     ),
                   ),
+                ] else if (widget.iconName == 'neon') ...[
+                  Positioned.fill(
+                    child: Image.asset(
+                      'assets/images/neon_bg.jpg',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Positioned.fill(
+                    child: AnimatedContainer(
+                      duration: const Duration(milliseconds: 200),
+                      color: Colors.black.withOpacity(_isHovered ? 0.4 : 0.55),
+                    ),
+                  ),
                 ],
                 // Background decoration circles for other categories
-                if (widget.iconName != 'anime' && widget.iconName != 'cars') ...[
+                if (widget.iconName != 'anime' && widget.iconName != 'cars' && widget.iconName != 'neon') ...[
                   Positioned(
                     top: -20,
                     right: -20,
@@ -213,7 +226,7 @@ class _CategoryCardState extends State<CategoryCard>
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      if (widget.iconName != 'anime' && widget.iconName != 'cars') ...[
+                      if (widget.iconName != 'anime' && widget.iconName != 'cars' && widget.iconName != 'neon') ...[
                         Container(
                           padding: const EdgeInsets.all(16),
                           decoration: BoxDecoration(

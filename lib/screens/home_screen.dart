@@ -379,6 +379,20 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             ),
                           ),
                         );
+                      } else if (category.id == 'neon') {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => WallpaperGridScreen(
+                              subcategory: Subcategory(
+                                id: 'neon_all',
+                                categoryId: 'neon',
+                                name: 'neon',
+                              ),
+                              categoryName: category.name,
+                            ),
+                          ),
+                        );
                       } else {
                         Navigator.push(
                           context,

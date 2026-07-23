@@ -143,7 +143,7 @@ class WallpaperCard extends StatelessWidget {
                       ),
                     ),
                     child: const Icon(
-                      Icons.lock,
+                      Icons.play_arrow,
                       color: Color(0xFFE040FB),
                       size: 14,
                     ),
