@@ -269,6 +269,62 @@ class FirebaseService {
           resolution: '4K',
           isFree: false,
         ),
+        Wallpaper(
+          id: 'shenlong',
+          subcategoryId: 'dragon_ball',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Anime%2FDragon_ball%2Fshenlong.png?alt=media&token=4f54e060-dd62-4d23-85b9-65e3c7e44e48',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'goku_normal',
+          subcategoryId: 'dragon_ball',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Anime%2FDragon_ball%2FGoku_Normal.png?alt=media&token=76c40d5f-8a4f-4031-8382-27e554d615a2',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'buu_delgado',
+          subcategoryId: 'dragon_ball',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Anime%2FDragon_ball%2FBuu_Delgado.png?alt=media&token=f45b907d-79fd-417f-8009-811625f960a2',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'ssj1_goku',
+          subcategoryId: 'dragon_ball',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Anime%2FDragon_ball%2FSSJ1_Goku.png?alt=media&token=528726e1-bdbe-4b44-815f-bdb63cf02efd',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'zeno_sama',
+          subcategoryId: 'dragon_ball',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Anime%2FDragon_ball%2FZeno_sama.png?alt=media&token=71c855b7-93a8-4d25-93ba-92037246ce83',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'hit',
+          subcategoryId: 'dragon_ball',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Anime%2FDragon_ball%2FHit.png?alt=media&token=77c814b0-909d-4288-a8b4-dbc56ca41c8e',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'maestro_roshi',
+          subcategoryId: 'dragon_ball',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Anime%2FDragon_ball%2FMaestro_Roshi.png?alt=media&token=81d0f534-06a4-4f60-967d-5c051d23ae3c',
+          resolution: '4K',
+          isFree: false,
+        ),
+        Wallpaper(
+          id: 'golden_freezer',
+          subcategoryId: 'dragon_ball',
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/wallverse-4804c.firebasestorage.app/o/Anime%2FDragon_ball%2FGolden_Fre.png?alt=media&token=0f70ae74-ef74-4782-96ef-3609a4e42fed',
+          resolution: '4K',
+          isFree: false,
+        ),
       ];
 
       int startIndex = 0;
